@@ -17,6 +17,7 @@
     </parent>
 
     <properties>
+        <binghe.common.version>1.0.0-SNAPSHOT</binghe.common.version>
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
         <spring.aop.version>2.1.6.RELEASE</spring.aop.version>
         <commons.lang3.version>3.9</commons.lang3.version>
@@ -43,6 +44,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.binghe</groupId>
+                <artifactId>binghe-common</artifactId>
+                <version>${binghe.common.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
